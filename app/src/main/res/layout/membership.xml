@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+    <TextView
+        android:textSize="50dp"
+        android:text="Drawing Context \n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/hoonyunpilsupkyukr"/>
+
+    <Button
+        android:textSize="45dp"
+        android:text="회원가입 \n"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/hoonyunpilsupkyukr"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:text="이름 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:text="아이디 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        <Button
+            android:background="#ffffff"
+            android:text="중복"
+            android:textSize="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:text="패스워드 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:text="패스워드2 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:text="이메일 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hoonyunpilsupkyukr"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

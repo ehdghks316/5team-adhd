@@ -1,52 +1,24 @@
 package com.example.a5team_adhd;
 
-import android.app.Activity;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.widget.ImageView;
 
-public class MainActivity extends Activity {
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 
-
-    private ListView listview ;
-
-    private ListViewAdapter adapter;
-
-    private int[] img = {R.drawable.p1,R.drawable.p2,R.drawable.p3};
-
-    private String[] Title = {"6/7","4/5","4/4"};
-
-    private String[] Context = {"아무나","초고수만~~","초보만!!"};
+public class MainActivity extends AppCompatActivity {
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+        ImageView drawing = (ImageView)findViewById(R.id.drawing2);
+        //iv.setImageResource(R.drawable.img);
+        //Glide.with(this).load(R.drawable.img).into(iv);
+        GlideDrawableImageViewTarget imageViewTarget = new GlideDrawableImageViewTarget(drawing);
+        Glide.with(this).load(R.drawable.drawing).into(imageViewTarget);
 
-//변수 초기화
-
-        adapter = new ListViewAdapter();
-
-        listview = (ListView) findViewById(R.id.List_view);
-
-//어뎁터 할당
-
-        listview.setAdapter(adapter);
-
-//adapter를 통한 값 전달
-
-        for(int i=0; i<img.length;i++){
-
-            adapter.addVO(ContextCompat.getDrawable(this,img[i]),Title[i],Context[i]);
-
-        }
 
     }
-
 }
-
-
