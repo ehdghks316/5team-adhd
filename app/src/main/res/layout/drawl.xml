@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFE4E1">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFE4E1"
+                android:layout_alignParentLeft="true">
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFE4E1"
+                        android:id="@+id/ready"
+                        android:text="ready"
+                        android:textColor="#d3d3d3"
+                        android:textSize="40dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFE4E1"
+                android:layout_alignParentRight="true">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFE4E1"
+                        android:id="@+id/out"
+                        android:text="나가기"
+                        android:textColor="#d3d3d3"
+                        android:textSize="40dp"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE4E1"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+        <Button
+                android:id="@+id/btnRED"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:background="#ff0000"
+                android:text="red" />
+
+        <Button
+                android:id="@+id/btnBLUE"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:background="#0000ff"
+                android:text="blue" />
+
+        <Button
+                android:id="@+id/btnGREEN"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:background="#00ff00"
+                android:text="green" />
+
+        <Button
+                android:id="@+id/btnBLACK"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:text="black" />
+
+        <Button
+                android:id="@+id/btnClear"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:text="지우개"/>
+
+    </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/llCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFE4E1"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+        <ListView
+                android:id="@+id/join_listview"
+                android:layout_width="125dp"
+                android:layout_height="100dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+       <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="120dp">
+           <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:scrollbars="vertical"/>
+
+       </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFE4E1"
+    >
+        <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전송"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
