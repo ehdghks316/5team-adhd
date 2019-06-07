@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".MainChat"></activity>
+        <activity android:name=".testroomlist"></activity>
+        <activity android:name=".make_room"></activity>
+        <activity android:name=".p_main0"></activity>
+        <activity android:name=".room"></activity>
+
+
+
     </application>
 
 </manifest>

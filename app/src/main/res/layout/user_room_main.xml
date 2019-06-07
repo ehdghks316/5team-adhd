@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="새로고침" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="방만들기" />
+
+        <ImageView
+            android:id="@+id/imageView3_main"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:src="@drawable/tropy3" />
+
+
+        <ImageView
+            android:id="@+id/imageView4_main"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:src="@drawable/board3" />
+
+        <ImageView
+            android:id="@+id/imageView5_main"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:src="@drawable/facebook4" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/List_view_main"
+        android:layout_width="321dp"
+        android:layout_height="566dp"
+        android:layout_gravity="center">
+
+    </ListView>
+
+</LinearLayout>
+
