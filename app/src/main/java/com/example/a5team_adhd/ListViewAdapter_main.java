@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class ListViewAdapter_main extends BaseAdapter {
     static String id;
+    public static String allsubject;
     private ArrayList<ListVO_main> listVO = new ArrayList<ListVO_main>() ;
     public ListViewAdapter_main() {
 
@@ -57,7 +58,7 @@ public class ListViewAdapter_main extends BaseAdapter {
                 Log.d("aabb", title.getText()+"");
                 Log.d("aabb", Context.getText()+"");
                 Log.d("aabb", listViewItem.getAuthor());
-
+                allsubject = Context.getText()+"";
 
              //   String[] words = id.split("&&");    // hong&&0
 

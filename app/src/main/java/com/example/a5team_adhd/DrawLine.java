@@ -2,7 +2,6 @@ package com.example.a5team_adhd;
 
 import android.content.Context;
 import android.graphics.*;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -124,7 +123,7 @@ public class DrawLine extends View
                 }
 
                 //화면을 갱신시킴.. 이 함수가 호출 되면 onDraw 함수가 실행됨.
-                Log.d("aabb", "  화면 갱신");
+
                 invalidate();
 
                 //계속 이벤트 처리를 하겠다는 의미.

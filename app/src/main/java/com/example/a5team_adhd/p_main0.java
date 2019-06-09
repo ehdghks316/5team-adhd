@@ -86,7 +86,7 @@ public class p_main0 extends Activity {
 
                 new Thread() {
                     public void run() {
-                        loginid = "hong&&0";
+                        loginid = "kim&&0";
                         ChatClient2.pw.println(loginid+"&&[로그인]&&"+pw+"&&"+id);
                         ChatClient2.pw.flush();
 

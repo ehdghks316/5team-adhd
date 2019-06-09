@@ -7,10 +7,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.TextView;
+import android.widget.*;
 
 import java.util.ArrayList;
 
@@ -39,7 +36,8 @@ public class testroomlist extends Activity {
     TextView room_subject;
     RadioButton member4;
     Button makeroom_bt;
-
+    ImageView imageView3_main;
+    ImageView imageView4_main;
 
 
 
@@ -56,6 +54,8 @@ public class testroomlist extends Activity {
         roommake = (Button)findViewById(R.id.button4);
 
         member4 = (RadioButton)findViewById(R.id.member4);
+        imageView3_main = (ImageView)findViewById(R.id.imageView3_main);
+        imageView4_main = (ImageView)findViewById(R.id.imageView4_main);
 
 
         Intent intent=new Intent(this.getIntent());
@@ -85,12 +85,12 @@ public class testroomlist extends Activity {
 
                 if(words2[2].equals("[새로고침]")){
 
-                    System.out.println(words2[3]);	// 방번호
+             /*       System.out.println(words2[3]);	// 방번호
                     System.out.println(words2[4]);	// 제목
                     System.out.println(words2[5]);	// 최소인원
                     System.out.println(words2[6]);	// 최대인원
                     System.out.println(words2[7]);	// 게임상태
-                    System.out.println(words2[8]);	// 방장
+                    System.out.println(words2[8]);	// 방장*/
 
 
                     num.add(words2[3]);
@@ -124,6 +124,7 @@ public class testroomlist extends Activity {
                     min.clear();
                     max.clear();
                     status.clear();
+                    memberid.clear();
 
                 } else if(words2[2].equals("[입장성공]")){
 
@@ -162,14 +163,14 @@ public class testroomlist extends Activity {
 
         new Thread() {
                      public void run() {
-                         a.pw.println(id+"&&[새로고침]&&");
-                         a.pw.flush();
+                         ChatClient2.pw.println(id+"&&[새로고침]&&");
+                         ChatClient2.pw.flush();
                      }
                   }.start();
 
 
         reload.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {   // 채팅
+            public void onClick(View v) {
                 new Thread() {
                     public void run() {
                         a.pw.println(id+"&&[새로고침]&&");
@@ -180,9 +181,29 @@ public class testroomlist extends Activity {
         });
 
         roommake.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {   // 채팅
+            public void onClick(View v) {
 
                 Intent intent=new Intent(testroomlist.this,make_room.class);
+                //intent.putExtra("roomid",loginid);
+                startActivity(intent);
+
+            }
+        });
+
+        imageView3_main.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent=new Intent(testroomlist.this,rank.class);
+                //intent.putExtra("roomid",loginid);
+                startActivity(intent);
+
+            }
+        });
+
+        imageView4_main.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent=new Intent(testroomlist.this,board.class);
                 //intent.putExtra("roomid",loginid);
                 startActivity(intent);
 

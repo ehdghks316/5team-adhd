@@ -21,10 +21,12 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/ll1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/customborder3"
                 android:baselineAligned="false"
                 android:orientation="vertical"
                 android:visibility="visible">
@@ -64,9 +66,11 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/customborder3"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -90,7 +94,8 @@
                         android:layout_height="36dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="0" />
+                        android:text="0"
+                        android:visibility="visible" />
                 </LinearLayout>
 
                 <ImageView
@@ -109,10 +114,12 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/ll3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/customborder3"
                 android:baselineAligned="false"
                 android:orientation="vertical">
 
@@ -137,7 +144,8 @@
                         android:layout_height="36dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="0" />
+                        android:text="0"
+                        android:visibility="visible" />
                 </LinearLayout>
 
                 <ImageView
@@ -147,19 +155,23 @@
                     android:layout_weight="1"
                     android:background="#FFE4E1"
 
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    tools:visibility="visible" />
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/customborder3"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
                     android:layout_weight="1"
+
                     android:orientation="horizontal">
 
                     <TextView
@@ -177,7 +189,8 @@
                         android:layout_height="36dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="0" />
+                        android:text="0"
+                        android:visibility="visible" />
                 </LinearLayout>
 
                 <ImageView
@@ -187,7 +200,7 @@
                     android:layout_weight="1"
                     android:background="#FFE4E1"
 
-                    android:visibility="gone"
+                    android:visibility="visible"
                     tools:visibility="visible" />
             </LinearLayout>
         </LinearLayout>
@@ -205,7 +218,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="주제  : "
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView10"
@@ -214,7 +228,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="나비"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -369,6 +384,10 @@
 
     </RelativeLayout>
     <LinearLayout
+
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFE4E1"
@@ -379,11 +398,15 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
 
+
         <Button
             android:id="@+id/transfer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="전송" />
+            android:background="#FFE4E1"
+            android:text="전송"
+            android:textColor="#2196F3"
+            android:textSize="30sp" />
     </LinearLayout>
 
 

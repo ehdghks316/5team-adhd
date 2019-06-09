@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/List_view_rank"
+        android:layout_width="321dp"
+        android:layout_height="566dp"
+        android:layout_gravity="center">
+
+    </ListView>
+
+</LinearLayout>
+
